@@ -1,0 +1,9 @@
+name: ""
+description: ""
+
+baseurl: "http://ycpcs.github.io/cs470-fall2014"
+
+paginate: 10
+
+markdown: rdiscount
+pygments: true
