@@ -29,25 +29,30 @@ CS370 with a grade of 2.0 or higher.
 Textbook
 --------
 
-Luna, Frank D. *Introduction to 3D Game Programming with DirectX 11.* Mercury Learning, 2012.
+Luna, Frank D. [*Introduction to 3D Game Programming with DirectX 11.*](http://www.merclearning.com/titles/3d_game_programming_directx11.html) Mercury Learning, 2012.
+
+[Frank Luna's supplementary materials.](http://www.d3dcoder.net/d3d11.htm)
 
 Course Structure and Expectations
 ---------------------------------
 
-Class time will be spent primarily on discussion of reading topics and work on labs and other assignments. In general, we will avoid giving lectures. It is very important that you do the reading; otherwise, it will be difficult for us to use the class time effectively.
+Class time will be spent primarily on discussion of reading topics and working on the labs and course projects. In general, I will avoid giving lectures. It is very important that you do the reading; otherwise, it will be difficult for the class time to be used effectively.
 
-Completing the in-class labs is very important, because this will be the primary way we will cover the fundamental techniques that you will need to use in your team project.  If you do not complete a lab in class, we expect you to complete it on your own outside of class.
+Completing the in-class labs is very important as they will lay the foundations you will need for the projects. If you do not complete a lab in class, I will expect you to complete it on your own outside of class.
+
+As this is an advanced elective course, you will only get as much out of this course as you put into it.
 
 Learning Outcomes
 -----------------
 
 By the end of the semester you will be able to
 
--   Design web and mobile applications
--   Implement web and mobile applications
--   Design and implement rich web user interfaces using HTML, CSS, and Javascript
--   Design and implement mobile applications using Android
--   Use relational databases for storage and retrieval of persistent data
+-   Write graphics programs using the DirectX API
+-   Write advanced vertex and fragment shaders using HLSL and/or GLSL, Cg
+-   Utilize the stencil and accumulation buffers for advanced effects such as
+shadows and stereoscopic rendering
+-   Use basic ray tracing methods to render photorealistic scenes
+-   Apply particle systems and NURBS to scene generation
 
 Policies
 --------
@@ -68,29 +73,32 @@ Grades are assigned on a 100-point scale:
 
 Your overall grade for the course will be determined as follows:
 
--   Individual homework: 30% **(&dagger;)**
--   Team project: 65% **(\*)**
+-   Topic lecture: 15% **(&dagger;)**
+-   Midterm project: 35% **(\*)**
+-   Final project: 45% **(\*)**
 -   Attendance and participation: 5%
 
-**(&dagger;)** You must make a good faith effort to complete all of the individual assignments.  We reserve the right to assign a failing grade for the course to any student who does not do this.
+**(&dagger;)** The lecture material must consist of a document describing the details of the topic along with a well defined lab activity.
 
-**(\*)** You must make a substantial *technical* contribution to your team software project. Although the non-technical contributions you make to your project, such as planning, communication, and organization, are important, you must also make a substantial contribution to the design and implementation of the software. We reserve the right to assign a failing grade for the course to any student who does not do this.
+**(\*)** The two course projects must be done **individually** and demonstrate incorporation of the various effects covered in class. Collaboration is encouraged for **high-level** conceptual discussions only. **Sharing of code is expressly forbidden and will be considered academic dishonesty.**
 
-### Course website
+### Course Website
 
-Please check the course web page, <http://ycpcs.github.io/cs496-spring2014/>, regularly for important announcements.
+Please check the course web page, <http://ycpcs.github.io/cs470-fall2014/>, regularly for important announcements.
 
-### Reading Assignments
+### Reading Assignments and Labs
 
 Reading assignments are posted in the [Schedule](schedule.html). Each reading assignment will be posted at least 1 week before the class in which the topic will be covered.
 
-We expect you to do each reading **before** class.
+I expect you to do each reading **before** class.
 
-### Posting and submission of assignments and labs
+Labs will be posted as zip files on the course web page, <http://ycpcs.github.io/cs470-fall2014/labs>.
 
-Assignments and labs will be posted as zip files on the course web page, <http://ycpcs.github.io/cs496-spring2014/>.
+### Course Projects
 
-Assignments will be submitted using the server <https://cs.ycp.edu/marmoset/>. You will receive an email containing the username and password you should use for this server.
+This course will be primarily project based and contain two projects throughout the semester. The midterm project will be similar to the final project from CS370 to demonstrate the basic graphics concepts such as geometry, lighting, texture mapping, etc. using the DirectX 11 API. The final project will be more comprehensive to include advanced effects such as particle systems, stencil/accumulation buffer effects, shadow mapping, geometry shader effects, etc.
+
+The grades for the projects will depend on how well each effect is utilized along with extension of the effects above and beyond what is provided in class. Students will be required to demonstrate both projects.
 
 ### Academic Integrity
 
@@ -100,31 +108,19 @@ The college catalog states the following:
 
 Please refer to the college catalog for an explanation of the official college policies relating to academic integrity.
 
-The following policy pertains to homework and graded (individual) programming assignments in this course:
+The following policy pertains to the projects for this course:
 
-> All homework assignments and graded (individual) programming assignments are to be completed individually. I encourage you to discuss high level concepts and strategies with other students, but any work you submit **must be yours alone**.
+> All graded projects are to be completed individually. I encourage you to discuss high level concepts and strategies with other students, but any work you submit **must be yours alone**.
 >
 > Direct copying of code or other work from other students, web sites, or other sources **is absolutely forbidden under any circumstances**.
 >
-> Any sources (books, websites, articles, fellow students, etc.) that you consult in completing an assignment **must be properly acknowledged**. In general, I strongly discourage you from using any resource not explicitly listed in the course syllabus or on the course web page. When you work on a programming assignment, it must be **your** program, not your adaptation of someone else's program.
-
-You are allowed to (and expected to) work with the members of your team on team project(s).
-
-Quizzes and exams must be completed individually.
+> Any sources (books, websites, articles, fellow students, etc.) that you consult **must be properly acknowledged**. In general, I encourage you to use other resources beyond those given in class, however you **must** reference the source even if you have adapted the code.
 
 Any violation of the course's academic integrity policy will be referred to the Dean of Academic Affairs, and could have consequences ranging from a 0 on an assignment to dismissal from the college.
 
-### Late Assignments
-
-Late assignments will be marked down 20% per day late. **No credit will be given for assignments that are more than two (2) days late.**
-
-### Exams
-
-No make-up exams will be given without approval of the instructor prior to class unless proof of extreme emergency or illness is provided. All exams will be open book and open notes.
-
 ### Attendance and Participation
 
-We expect you to attend class and participate regularly in class activities. If you miss a class, please notify me in advance. You are responsible for all material covered in class, regardless of whether or not you were present. If you attend and participate in class regularly, you can expect to receive full credit for attendance and participation. Frequent absence and/or lack of participation will reduce the credit you receive for attendance and participation. You are responsible for keeping up with the reading assignments as described in the schedule below.
+I expect you to attend class and participate regularly in class activities. If you miss a class, please notify me in advance. You are responsible for all material covered in class, regardless of whether or not you were present. If you attend and participate in class regularly, you can expect to receive full credit for attendance and participation. Frequent absence and/or lack of participation will reduce the credit you receive for attendance and participation. You are responsible for keeping up with the reading assignments.
 
 ### Use of Personal Technology in the Classroom
 
@@ -133,3 +129,11 @@ While York College recognizes students’ need for educational and emergency-rel
 ### Communication Standards
 
 York College recognizes the importance of effective communication in all disciplines and careers. Therefore, students are expected to competently analyze, synthesize, organize, and articulate course material in papers, examinations and presentations. In addition, students should know and use communication skills current to their field of study, recognize the need for revision as part of their writing process, and employ standard conventions of English usage in both writing and speaking. Students may be asked to further revise assignments that do not demonstrate effective use of these communication skills.
+
+### Disability Support Services
+
+If you had an IEP or 504 plan in high school or if you have a disability or health condition that impacts you in the classroom, please contact Linda Miller, Director of Disability Support Services, at 815-1785 or lmille18@ycp.edu to discuss obtaining the accommodations for which you may be eligible. If you already have an accommodation memo and wish to access your accommodations in this class, please see me confidentially to discuss.
+
+### Disclaimer
+
+This syllabus is subject to change by the instructor.
