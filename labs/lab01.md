@@ -25,13 +25,13 @@ Next, we will need to tell Visual Studio where the DirectX 11 headers and librar
 Select **VC++ Directories**, select **Include Directories**, click the arrow at the end of the row, and select **\<Edit...\>**. When the dialog box opens, select the first icon at the top (which looks like the icon to add a new folder) which should add a new line into the text box. Add the following paths (use the up/down arrows to arrange them in the specified order):
  
 	$(IncludePath) 
-	$(DXSDK\_DIR)Include 
+	$(DXSDK_DIR)Include 
 	C:"path to whereever Luna's Common folder is"
 
 Select **VC++ Directories**, select **Library Directories**, click the arrow at the end of the row, and select **\<Edit...\>**. When the dialog box opens, select the first icon at the top (which looks like the icon to add a new folder) which should add a new line into the text box. Add the following paths (use the up/down arrows to arrange them in the specified order):
  
 	$(LibraryPath) 
-	$(DXSDK\_DIR)Libx86 
+	$(DXSDK_DIR)Lib\x86 
 	C:"path to wherever Luna's Common folder is"
 
 Finally we need to link against the DirectX libraries. Expand the **Linker** tab and choose **Input**. Then edit the **Additional Dependencies** field to add the following libraries:
