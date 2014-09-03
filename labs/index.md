@@ -12,4 +12,5 @@ Although the labs are not graded and you are not required to submit them, they a
 > Aug 26 | [Lab 0: Computer Setup](lab00.html) | N/A
 > Aug 28 | [Lab 1: DirectX Framework I](lab01.html) | N/A
 > Sept 2 | [Lab 2: DirectX Framework II](lab02.html) | N/A
+> Sept 4 | [Lab 3: Basic Cube I](lab03.html) | [CS470_Lab03.zip](src/CS470_Lab03.zip)
 
