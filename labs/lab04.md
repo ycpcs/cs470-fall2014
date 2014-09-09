@@ -55,7 +55,7 @@ The constructor just initializes all the attributes to 0.
 
 ```cpp
 // Constructor
-Cube::Cube() : mNumVertices(0),mNumFaces(0),md3dDevice(0),mVertexBuffer(0),mIndexBuffer(0)
+Cube::Cube() : mNumVertices(0),mNumFaces(0),mVertexBuffer(0),mIndexBuffer(0)
 {
 }
 ```
@@ -173,7 +173,7 @@ vbd.StructureByteStride = 0;
 D3D11_SUBRESOURCE_DATA vinitData;
 vinitData.pSysMem = vertices;
 
-HR(md3dDevice->CreateBuffer(&vbd, &vinitData, &mVertexBuffer));
+HR(device->CreateBuffer(&vbd, &vinitData, &mVertexBuffer));
 ```
 
 Similarly we create the index buffer using our index array (note the calculation used for the total number of indices, particularly the number of edges where each edge loop has one extra vertex to complete the loop)
@@ -190,7 +190,7 @@ ibd.StructureByteStride = 0;
 D3D11_SUBRESOURCE_DATA iinitData;
 iinitData.pSysMem = indices;
 
-HR(md3dDevice->CreateBuffer(&ibd, &iinitData, &mIndexBuffer));
+HR(device->CreateBuffer(&ibd, &iinitData, &mIndexBuffer));
 ```
 
 **Draw**
@@ -250,15 +250,15 @@ We will name our vertex shader **VS()** (although any valid C syntax function na
 // Input vertex datatype
 struct VIn
 {
-	float3 inPos : POSITION,
-	float4 inCol : COLOR
+	float3 inPos : POSITION;
+	float4 inCol : COLOR;
 };
 
 // Output vertex datatype
 struct VOut
 {
-	float4 pos : SV_POSITION
-	float4 col : COLOR
+	float4 pos : SV_POSITION;
+	float4 col : COLOR;
 };
 
 // Vertex shader
@@ -271,6 +271,9 @@ VOut VS(VIn vin)
 
 	// Pass color through
 	vout.col = vin.inCol;
+	
+	// Return transformed vertex
+	return vout;
 }
 ```
 
