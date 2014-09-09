@@ -28,7 +28,6 @@ DWORD mNumFaces;
 DWORD mNumEdges;
 
 // DirectX objects
-ID3D11Device* md3dDevice;
 ID3D11Buffer* mVertexBuffer;
 ID3D11Buffer* mIndexBuffer;
 ```
@@ -45,8 +44,8 @@ First we need define a structure to describe what information will be stored for
 
 // Vertex structure
 struct Vertex {
-	D3DXVECTOR3 pos;
-	D3DXCOLOR color;
+	XMFLOAT3 pos;
+	XMFLOAT4 color;
 };
 ```
 
@@ -82,7 +81,6 @@ We will want to add edges to our cube faces, since they are a different color we
 
 ```cpp
 // Set instance attributes (2 triangles per face)
-md3dDevice = device;
 mNumVertices = 16;
 mNumFaces = 12;
 mNumEdges = 24;
@@ -94,26 +92,27 @@ Remembering that DirectX utilizes a *left-handed* coordinate system, we can list
 
 ```cpp
 // Create vertex array
-Vertex vertices[] = 
+Vertex vertices[] =
 {
 	// face vertices
-	{D3DXVECTOR3(-1.0f,-1.0f,-1.0f),WHITE},
-	{D3DXVECTOR3(-1.0f,1.0f,-1.0f),BLACK},
-	{D3DXVECTOR3(1.0f,1.0f,-1.0f),RED},
-	{D3DXVECTOR3(1.0f,-1.0f,-1.0f),GREEN},
-	{D3DXVECTOR3(-1.0f,-1.0f,1.0f),BLUE},
-	{D3DXVECTOR3(-1.0f,1.0f,1.0f),YELLOW},
-	{D3DXVECTOR3(1.0f,1.0f,1.0f),CYAN},
-	{D3DXVECTOR3(1.0f,-1.0f,1.0f),MAGENTA},
+	{ XMFLOAT3(-1.0f, -1.0f, -1.0f), (const float*)&Colors::White },
+	{ XMFLOAT3(-1.0f, +1.0f, -1.0f), (const float*)&Colors::Black },
+	{ XMFLOAT3(+1.0f, +1.0f, -1.0f), (const float*)&Colors::Red },
+	{ XMFLOAT3(+1.0f, -1.0f, -1.0f), (const float*)&Colors::Green },
+	{ XMFLOAT3(-1.0f, -1.0f, +1.0f), (const float*)&Colors::Blue },
+	{ XMFLOAT3(-1.0f, +1.0f, +1.0f), (const float*)&Colors::Yellow },
+	{ XMFLOAT3(+1.0f, +1.0f, +1.0f), (const float*)&Colors::Cyan },
+	{ XMFLOAT3(+1.0f, -1.0f, +1.0f), (const float*)&Colors::Magenta },
+
 	// edge vertices
-	{D3DXVECTOR3(-1.0f,-1.0f,-1.0f),BLACK},
-	{D3DXVECTOR3(-1.0f,1.0f,-1.0f),BLACK},
-	{D3DXVECTOR3(1.0f,1.0f,-1.0f),BLACK},
-	{D3DXVECTOR3(1.0f,-1.0f,-1.0f),BLACK},
-	{D3DXVECTOR3(-1.0f,-1.0f,1.0f),BLACK},
-	{D3DXVECTOR3(-1.0f,1.0f,1.0f),BLACK},
-	{D3DXVECTOR3(1.0f,1.0f,1.0f),BLACK},
-	{D3DXVECTOR3(1.0f,-1.0f,1.0f),BLACK}
+	{ XMFLOAT3(-1.0f, -1.0f, -1.0f), (const float*)&Colors::Black },
+	{ XMFLOAT3(-1.0f, +1.0f, -1.0f), (const float*)&Colors::Black },
+	{ XMFLOAT3(+1.0f, +1.0f, -1.0f), (const float*)&Colors::Black },
+	{ XMFLOAT3(+1.0f, -1.0f, -1.0f), (const float*)&Colors::Black },
+	{ XMFLOAT3(-1.0f, -1.0f, +1.0f), (const float*)&Colors::Black },
+	{ XMFLOAT3(-1.0f, +1.0f, +1.0f), (const float*)&Colors::Black },
+	{ XMFLOAT3(+1.0f, +1.0f, +1.0f), (const float*)&Colors::Black },
+	{ XMFLOAT3(+1.0f, -1.0f, +1.0f), (const float*)&Colors::Black }
 };
 ```
 
