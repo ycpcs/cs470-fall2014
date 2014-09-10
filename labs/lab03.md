@@ -201,10 +201,10 @@ mTech->GetDesc(&td);
 for (UINT p = 0; p < td.Passes; p++)
 {
 	// Set pass
-	mTech->GetPassByIndex(p)->Apply(0, md3dImmedateContext);
+	mTech->GetPassByIndex(p)->Apply(0, md3dImmediateContext);
 
 	// Draw objects
-	mBox.draw();
+	mBox.Draw(md3dImmediateContext);
 }
 ```
 
