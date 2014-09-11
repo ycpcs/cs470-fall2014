@@ -125,8 +125,9 @@ for (UINT i = 0; i < numVertices; ++i)
 Finally we load the (triangle) indicies by ignoring a header and looping through all the triangles to parse out the respective indices.
 
 ```cpp
-// Read indicies for all triangles
 fin >> ignore; // ignore triangles header text
+
+// Read index data for all triangles
 for (UINT i = 0; i < numTriangles; ++i)
 {
 	fin >> Indices[i * 3 + 0] >> Indices[i * 3 + 1] >> Indices[i * 3 + 2];
