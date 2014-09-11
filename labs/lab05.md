@@ -122,6 +122,17 @@ for (UINT i = 0; i < numVertices; ++i)
 }
 ```
 
+Finally we load the (triangle) indicies by ignoring a header and looping through all the triangles to parse out the respective indices.
+
+```cpp
+// Read indicies for all triangles
+fin >> ignore; // ignore triangles header text
+for (UINT i = 0; i < numTriangles; ++i)
+{
+	fin >> Indices[i * 3 + 0] >> Indices[i * 3 + 1] >> Indices[i * 3 + 2];
+}
+```
+
 Once all the data is loaded, the various methods for the **MeshGeometry** object are called to create the corresponding buffers similar to how they were created in the last lab.
 
 Draw
