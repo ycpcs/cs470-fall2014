@@ -15,4 +15,5 @@ Although the labs are not graded and you are not required to submit them, they a
 > Sept 4 | [Lab 3: Basic Cube I](lab03.html) | [CS470_Lab03.zip](src/CS470_Lab03.zip)
 > Sept 9 | [Lab 4: Basic Cube II](lab04.html) | N/A
 > Sept 11 | [Lab 5: Basic Meshes](lab05.html) | [CS470_Lab05.zip](src/CS470_Lab05.zip)
+> Sept 16 | [Lab 6: Intro to Blender](lab06.html) | N/A
 
