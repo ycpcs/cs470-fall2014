@@ -39,7 +39,7 @@ Basic Setup
 
 -   To start, select Cycles Render from the drop down menu at the top of the screen.
  
-	> ![image](images/lab06/cycle.png)
+	> ![image](images/lab06/cycle.PNG)
 
 -   To add your starting object, you may either use the **Create** sub menu on the side of the screen or press shift+'a'. Open an add menu and select the cylinder from the mesh submenu to add it to your scene. On the bottom of your left toolbar, an **Add Cylinder** menu should have appeared. 
 
@@ -47,7 +47,7 @@ Basic Setup
 
 -   On the bottom menu find the object interaction menu and switch it from **Object Mode** to **Edit Mode**. (Menu highlighted in yellow below)
 
-	> ![image](images/lab06/obmode.png)
+	> ![image](images/lab06/obmode.PNG)
 
 -   Then change the object display menu from **Solid** to **WireFrame**. (Menu indicted by red line. 
 
@@ -58,7 +58,7 @@ To make the cylinder we have look more like a cup, we need to get rid of the top
 
 -   Deselct the cylinder (press 'a') and select the top vertices by righting clicking the center point. It should look like this: 
 
-	> ![image](images/lab06/topvs.png)
+	> ![image](images/lab06/topvs.PNG)
 
 -   Delete these vertices.
 
@@ -68,13 +68,13 @@ To make the cylinder we have look more like a cup, we need to get rid of the top
 
 -   Deselect the cylinder so that we can select only the top vertices. To do so press 'b' on your keyboard and drag the curser so that it encapsulated the top vertices like so:
 
-	> ![image](images/lab06/seltopvs.png)
+	> ![image](images/lab06/seltopvs.PNG)
 
 -   Move these vertices down about halfway by clicking the blue arrow with the left mouse button and move them down. Then we are going to scale the top by 90%. To do so press 's', type in .9, and press enter. 
 
 -   Deselect then select the middle vertices so that it looks like this:
 
-	> ![image](images/lab06/midtopvs.png)
+	> ![image](images/lab06/midtopvs.PNG)
 
 -   Then scale these vertices to 105%. 
 
@@ -84,7 +84,7 @@ To make the cylinder we have look more like a cup, we need to get rid of the top
 
 -   Right now you should have something that looks like this: 
 
-	> ![image](images/lab06/cup.png)
+	> ![image](images/lab06/cup.PNG)
 
 3. Coffee Cups Look So Much Better With Handles
 ===============================================
@@ -105,7 +105,7 @@ We want these nodes to look like a handle. To do so,
 
 You want to make your path (The black line) to form a backwards 'C'. After repositioning the points, your path should look like this: 
 
-> ![image](images/lab06/hanpath.png)
+> ![image](images/lab06/hanpath.PNG)
 
 We will be connecting the handles around the red dots, so return to **Object Mode**. Now we are going to make our path 3D. To do so we must bevel it using another object.
 
@@ -115,7 +115,7 @@ We will be connecting the handles around the red dots, so return to **Object Mod
 
 -   On the right side of the screen select the **Object Data** menu. 
 
-	> ![image](images/lab06/objdata.png)
+	> ![image](images/lab06/objdata.PNG)
 
 -   Find the **Geometry** section and within it find the **Bevel Object** option. Click on the entry box and select the **Bezier Circle**.
 
@@ -140,7 +140,7 @@ First we have to make sure the handle is alligned properly.
 
 -   Press the '7' key on the number pad to switch to top view. The handle should be lined up like this:
 
-	> ![image](images/lab06/topcup.png)
+	> ![image](images/lab06/topcup.PNG)
 
 -   Switch back to front view, (Number pad '1'), and move the cup closer to the handle so that there is still a little room between the cup and handle. (Remember: To move the cup select it and use the red arrow.)
  
@@ -152,7 +152,7 @@ First we have to make sure the handle is alligned properly.
 
 -   Then we are going to change our selection mode to **Face** from the selection menu at the bottom of the page. 
 
-	> ![image](images/lab06/face.png)  
+	> ![image](images/lab06/face.PNG)  
 
 	This allows us to select faces instead of vertices. 
 
@@ -160,11 +160,11 @@ First we have to make sure the handle is alligned properly.
 
 -   Delete the faces shown by selecting them and pressing 'del' and selecting faces. 
 
-	> ![image](images/lab06/tdelface.png)  
+	> ![image](images/lab06/tdelface.PNG)  
 
 -   Rotate the object up and delete the faces shown: 
 
-	> ![image](images/lab06/bdelface.png)  
+	> ![image](images/lab06/bdelface.PNG)  
 
 Now we are going to connect the handle to the cup. First we must be able to select edges. 
 
@@ -172,29 +172,29 @@ Now we are going to connect the handle to the cup. First we must be able to sele
 
 -   Rotate back up to the top of the handle. Select the three edges shown by the red marks.
 
-	> ![image](images/lab06/join1.png)
+	> ![image](images/lab06/join1.PNG)
 
 -   Press the 'f' key on the key board to create a new face between these edges. 
 
 -   Repeat for the next set: 
 
-	> ![image](images/lab06/join2.png)
+	> ![image](images/lab06/join2.PNG)
 
 -   Rotate under the top of the handle and repeat for these two sets:
 
-	> ![image](images/lab06/join3.png)
+	> ![image](images/lab06/join3.PNG)
 
-	> ![image](images/lab06/join4.png)
+	> ![image](images/lab06/join4.PNG)
 
 -   Rotate to the bottom part of the handle and join the following edges: 
 
-	> ![image](images/lab06/join5.png)
+	> ![image](images/lab06/join5.PNG)
 
-	> ![image](images/lab06/join6.png)
+	> ![image](images/lab06/join6.PNG)
 
-	> ![image](images/lab06/join7.png)
+	> ![image](images/lab06/join7.PNG)
 
-	> ![image](images/lab06/join8.png)
+	> ![image](images/lab06/join8.PNG)
 
 We now have what looks like the outside of a coffee cup!
 
@@ -223,7 +223,7 @@ If you move your mouse you can see what extrude does. We are going to move the v
 
 -   Click the left mouse button. Then press 's' and move your mouse to scale so that you have a final product that looks like this:
 
-	> ![image](images/lab06/extrude1.png)
+	> ![image](images/lab06/extrude1.PNG)
 
 -   Then Press the left mouse button to lock the points in.
 
@@ -231,15 +231,15 @@ Now we are going to extrude again and pull the points down to the next line.
 
 -   Click the left mouse button is scale so that the final product looks like this. 
 
-	> ![image](images/lab06/extrude2.png)
+	> ![image](images/lab06/extrude2.PNG)
 
 -   Then press the left mouse button to lock points in.
 
 -   Repeat this process so that you have this sequence: 
 
-	> ![image](images/lab06/extrude3.png)
+	> ![image](images/lab06/extrude3.PNG)
 
-	> ![image](images/lab06/extrude4.png)
+	> ![image](images/lab06/extrude4.PNG)
 
 -   On the last point extrude again then press enter to extrude to the same point. 
 
@@ -268,7 +268,7 @@ Your object should look a little less rough.
 
 -   Now go over to the right side menu and click on the **Object Modifiers** button:
 
-	> ![image](images/lab06/obmodbutton.png)
+	> ![image](images/lab06/obmodbutton.PNG)
 
 -   Then click on the **Add Modifer** and select **Subdivision Surface**.
 
@@ -278,7 +278,7 @@ With our cup all smooth, we can add a material to it.
 
 -   On the Right side menus, select the **Material** menu
 
-	> ![image](images/lab06/matbut.png)
+	> ![image](images/lab06/matbut.PNG)
 
 -   Then click the new button. 
 
