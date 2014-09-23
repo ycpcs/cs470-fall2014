@@ -247,7 +247,7 @@ struct SpotLight
 };
 ```
 	
-Additionally, shader variables for the light and camera position are defined *per frame* in the effect file **LightHelper.fx** as
+Additionally, shader variables for the light and camera position are defined *per frame* in the effect file **Lighting.fx** as
 
 ```cpp
 cbuffer cbPerFrame
