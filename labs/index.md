@@ -17,4 +17,5 @@ Although the labs are not graded and you are not required to submit them, they a
 > Sept 11 | [Lab 5: Basic Meshes](lab05.html) | [CS470_Lab05.zip](src/CS470_Lab05.zip)
 > Sept 16 | [Lab 6: Intro to Blender](lab06.html) | N/A
 > Sept 18 | [Lab 6-2: Blender Cont.](lab06-2.html) | [CS470_xtom3dconverter.jar](src/CS470_xtom3dconverter.jar)
+> Sept 23 | [Lab 7: Lighting](lab07.html) | [CS470_Lab07.zip](src/CS470_Lab07.zip)
 
