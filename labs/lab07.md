@@ -14,10 +14,8 @@ Double-click on **CS470\_Lab07.zip** and extract the contents of the archive int
 
 Navigate into the **CS470\_Lab07** directory and double-click on **CS470\_Lab07.sln** (the file with the little Visual Studio icon with the 13 on it) which should immediately open Visual Studio with the project.
 
-If the **Header Files**, **Resource Files** and **Source Files** folders in the **Solution Explorer** pane are not expanded, expand each by double clicking on them and double-click on **Lighting.h**, **Lighting.cpp**, **BasicLightApp.h** and **BasicLightApp.cpp**.
-
-1 Local Illumination Models
-===========================
+1. Local Illumination Models
+============================
 
 In this model, each local object is lit independently of another object, and only the light directly emitted from the light sources is taken into account in
 the lighting process (i.e., light that has bounced off other scene objects to strikes the object currently being lit is ignored).
