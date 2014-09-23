@@ -8,7 +8,7 @@ In CS370, we covered different types of lighting including ambient, diffuse, and
 0. Getting Started
 ==================
 
-Download [CS470\_Lab07.zip](CS470_Lab07.zip), saving it into the **labs** directory.
+Download [CS470\_Lab07.zip](src/CS470_Lab07.zip), saving it into the **labs** directory.
 
 Double-click on **CS470\_Lab07.zip** and extract the contents of the archive into a subdirectory called **CS470\_Lab07**
 
@@ -270,7 +270,7 @@ cbuffer cbPerFrame
 	float3 gEyePosW;
 };
 
-	cbuffer cbPerObject
+cbuffer cbPerObject
 {
 	float4x4 gWorld;
 	float4x4 gWorldInvTranspose;
