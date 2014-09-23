@@ -186,16 +186,6 @@ struct Material
 };
 ```
 
-A corresponding input vertex structure **VS_IN** is defined in the effect file **basiclight.fx** as
-
-```cpp
-struct VS_IN
-{
-	float3 pos     : POSITION;
-	float3 norm     : NORMAL;
-};
-```
-
 The **Mesh** for this lab is place in **LightingDemo.cpp**
 
 ```cpp
