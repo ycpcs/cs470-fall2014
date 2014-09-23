@@ -72,7 +72,7 @@ Find the face normal of a triangle.  For example, a triangle Δp0 p1 p2, we firs
 
 > **v = p2 – p0**
 	
-> **n = **(u x v)/(||u x v||)**
+> **n = (u x v)/(||u x v||)**
 
 note: **n** is the vertex normals defined on the triangle p0, p1, p2 and pn.
 
