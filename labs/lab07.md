@@ -269,7 +269,7 @@ cbuffer cbPerObject
 
 **Compute Directional Light**
 
-In the LightHelper.fx
+In the **LightHelper.fx**
 
 ```cpp
 void ComputeDirectionalLight(Material mat, DirectionalLight L, 
