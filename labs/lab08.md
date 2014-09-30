@@ -15,7 +15,7 @@ Double-click on **CS470\_Lab08.zip** and extract the contents of the archive int
 1. Choosing and Using your Texture
 ==================================
 
-The most important thing when texture mapping is to actually have a texture that you want to use. Any 2-D image can be used, but if you are feeling uncreative (or lazy), there are a few existing images in the **Textures** folder of your lab. Once you have selected your image, it is time to use it in the program. In the **Init()** method of **Crate.cpp**, we load our texture as follows
+The most important thing when texture mapping is to actually have a texture that you want to use. Any 2-D image can be used, but if you are feeling uncreative (or lazy), there are a few existing images in the **Textures** folder of your lab. Once you have selected your image, it is time to use it in the program. In the **Init()** method of **CrateDemo.cpp**, we load our texture as follows
 
 ```cpp
 HR(D3DX11CreateShaderResourceViewFromFile(md3dDevice, L"Destination of your Texture file", 0, 0, &mDiffuseMapSRV, 0)); 
@@ -30,9 +30,9 @@ Next, we modify our vertex structure once again and add a pair of texture coordi
 // Basic 32-byte vertex structure.
 struct Basic32
 {
-    D3DXVECTOR3 Pos;
-    D3DXVECTOR3 Normal;
-    D3DXVECTOR2 Tex;
+    XMFLOAT3 Pos;
+    XMFLOAT3 Normal;
+    XMFLOAT2 Tex;
 };  
 ```
 
