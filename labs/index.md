@@ -19,3 +19,4 @@ Although the labs are not graded and you are not required to submit them, they a
 > Sept 18 | [Lab 6-2: Blender Cont.](lab06-2.html) | [CS470_xtom3dconverter.jar](src/CS470_xtom3dconverter.jar)
 > Sept 23 | [Lab 7: Lighting](lab07.html) | [CS470_Lab07.zip](src/CS470_Lab07.zip)
 > Sept 25 | [Lab 7-2: Lighting - Camera](lab07-2.html) | [CS470_Lab07-2.zip](src/CS470_Lab07-2.zip)
+> Sept 30 | [Lab 8: Textures](lab08.html) | [CS470_Lab08.zip](src/CS470_Lab08.zip)
