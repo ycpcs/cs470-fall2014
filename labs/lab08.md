@@ -26,6 +26,8 @@ HR(D3DX11CreateShaderResourceViewFromFile(md3dDevice, L"Destination of your Text
 
 Next, we modify our vertex structure once again and add a pair of texture coordinates that identify a point on the texture. Now every 3D vertex has a corresponding 2D texture vertex. Thus, every 3D triangle defined by three vertices also defines a 2D triangle in texture space (i.e., we have associated a 2D texture triangle for every 3D triangle).
 
+In **Vertex.h**
+
 ```cpp
 // Basic 32-byte vertex structure.
 struct Basic32
