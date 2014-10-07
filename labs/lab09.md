@@ -19,7 +19,7 @@ Blending is done by combining the pixels currently being rasterized (source pixe
 
 > ![image](images/lab09/color_equation.png)
 
-**C_src** is the color of the source pixel currently being rasterized. **C_dst** is the color of the destination pixel that is on the back buffer. **F_src** is the blend factor of the source pixel and **F_dst** is the blend factor of the destination pixel. The color of a pixel is made by the product of the source pixel and its blend factor done with a binary operatior on the product of the destination pixel and its blend factor. Note that 
+**C_src** is the color of the source pixel currently being rasterized. **C_dst** is the color of the destination pixel that is on the back buffer. **F_src** is the blend factor of the source pixel and **F_dst** is the blend factor of the destination pixel. The color of a pixel is made by the product of the source pixel and its blend factor done with a binary operator on the product of the destination pixel and its blend factor. Note that 
 the blending RGB components are done seperately from the blending of the alpha component. The equation to determine the blending of the alpha component is essentially the same as the equation for blending the RGB component, simply replace the color components with the alpha component:
 
 > ![image](images/lab09/alpha_equation.png) 
@@ -45,7 +45,7 @@ D3D11_BLEND_OP_ADD
 
 > ![image](images/lab09/add_ops.png)
 
-Using the adding operation  can create a brighter image because color is being added. 
+Using the adding operation can create a brighter image because color is being added. 
 
 Note: this effect can also be implemented by setting the **D3D11_RENDER_TARGET_BLEND_DES::RenderTargetWriteMask** member to zero;
 
@@ -75,19 +75,19 @@ typedef struct D3D11_BLEND_DESC {
 
 -    **RenderTarget** - an array of eight **D3D11_RENDER_TARGET_BLEND_DESC** elements. 
 
-Each RentderTarget has several variables to set blend factors, blend operations and which color channels in the back buffer to overwrite
+Each RenderTarget has several variables to set blend factors, blend operations and which color channels in the back buffer to overwrite
 
 ```cpp
 typedef struct D3D11_RENDER_TARGET_BLEND_DESC {
 
-BOOL BlendEnable; 							//enable/disable blending
-D3D11_BLEND SrcBlend; 					//specifies the blend factor for the source pixel			
+BOOL BlendEnable; 					//enable/disable blending
+D3D11_BLEND SrcBlend; 				//specifies the blend factor for the source pixel			
 D3D11_BLEND DestBlend; 				//specifies the blend factor for the destination pixel		
 D3D11_BLEND_OP BlendOp; 			//specifies the RGB blending operation	
 D3D11_BLEND SrcBlendAlpha; 			//specifies blend factor for source pixel's alpha component			
 D3D11_BLEND DestBlendAlpha; 		//specifies the blend factor destination pixel's alpha component		
-D3D11_BLEND_OP BlendOpAlpha; 	//the blending operation for the Alpha component			
-UINT8 RenderTargetWriteMask;			//specifies which color channels in the back buffer to write to after blending	
+D3D11_BLEND_OP BlendOpAlpha; 		//the blending operation for the Alpha component			
+UINT8 RenderTargetWriteMask;		//specifies which color channels in the back buffer to write to after blending	
 ```
 
 5. Transparency (Alpha Blending)
@@ -100,8 +100,7 @@ The first thing we need to do is to create an instance of the **ID3D11BlendState
 static ID3D11BlendState* TransparentBS;
 ```
 
-In **RenderStates.cpp**  in the **InitAll()** method, add a pointer to a **ID3D11BlendState** called **RenderStates::AlphaToCoverageBS** and 
-**RenderStates::AlphaToCoverageBS**. Remember to set both of them to zero.
+In **RenderStates.cpp**  in the **InitAll()** method, add a pointer to a **ID3D11BlendState** called **RenderStates::TransparentBS**. Remember to set both of them to zero.
 
 ```cpp
 // init blendStates
@@ -128,14 +127,14 @@ Since we are working with transparency we need to set the blend operation to **D
 ```cpp
 //TODO: set blending factors
 //set blend factors and alphas for source and destination pixels and set blend operation
-transparentWater.RenderTarget[0].BlendEnable = true;
-transparentWater.RenderTarget[0].SrcBlend       = D3D11_BLEND_SRC_ALPHA;
-transparentWater.RenderTarget[0].DestBlend      = D3D11_BLEND_INV_SRC_ALPHA;
-transparentWater.RenderTarget[0].BlendOp        = D3D11_BLEND_OP_ADD;
-transparentWater.RenderTarget[0].SrcBlendAlpha  = D3D11_BLEND_ONE;
-transparentWater.RenderTarget[0].DestBlendAlpha = D3D11_BLEND_ZERO;
-transparentWater.RenderTarget[0].BlendOpAlpha   = D3D11_BLEND_OP_ADD;
-transparentWater.RenderTarget[0].RenderTargetWriteMask = D3D11_COLOR_WRITE_ENABLE_ALL;
+transparentWater.RenderTarget[0].BlendEnable 			= true;
+transparentWater.RenderTarget[0].SrcBlend       		= D3D11_BLEND_SRC_ALPHA;
+transparentWater.RenderTarget[0].DestBlend      		= D3D11_BLEND_INV_SRC_ALPHA;
+transparentWater.RenderTarget[0].BlendOp        		= D3D11_BLEND_OP_ADD;
+transparentWater.RenderTarget[0].SrcBlendAlpha  		= D3D11_BLEND_ONE;
+transparentWater.RenderTarget[0].DestBlendAlpha 		= D3D11_BLEND_ZERO;
+transparentWater.RenderTarget[0].BlendOpAlpha   		= D3D11_BLEND_OP_ADD;
+transparentWater.RenderTarget[0].RenderTargetWriteMask 	= D3D11_COLOR_WRITE_ENABLE_ALL;
 ```
 
 We then need to call **CreateBlendState()** method to set all the values we declared for the **D3D11_BLEND_DESC**.
