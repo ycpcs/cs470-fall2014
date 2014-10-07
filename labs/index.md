@@ -21,3 +21,4 @@ Although the labs are not graded and you are not required to submit them, they a
 > Sept 25 | [Lab 7-2: Lighting - Camera](lab07-2.html) | [CS470_Lab07-2.zip](src/CS470_Lab07-2.zip)
 > Sept 30 | [Lab 8: Textures](lab08.html) | [CS470_Lab08.zip](src/CS470_Lab08.zip)
 > Oct 2   | [Lab 8-2: Animated Textures](lab08-2.html) | [CS470_Lab08-2.zip](src/CS470_Lab08-2.zip)
+> Oct 7 | [Lab 9: Blending](lab09.html) | [CS470_Lab09.zip](src/CS470_Lab09.zip)
