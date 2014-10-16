@@ -33,6 +33,11 @@ Luna, Frank D. [*Introduction to 3D Game Programming with DirectX 11.*](http://w
 
 [Frank Luna's supplementary materials.](http://www.d3dcoder.net/d3d11.htm)
 
+Supplementary Reference
+-----------------------
+
+[Braynzarsoft.net](http://www.braynzarsoft.net)
+
 Course Structure and Expectations
 ---------------------------------
 
