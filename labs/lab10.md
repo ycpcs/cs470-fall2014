@@ -212,7 +212,7 @@ To begin programming the Geometry Shader, we'll add code in the effect file to d
 
 ```cpp
 [maxvertexcount(4)]
-void GS(point VertexOut gIn[1], 
+void GS(point VertexOut gin[1], 
 		uint primID : SV_PrimitiveID, 
 		inout TriangleStream<GeoOut> triStream)
 ```
