@@ -26,3 +26,4 @@ Although the labs are not graded and you are not required to submit them, they a
 > Oct 21 | [Lab 10: Geometry Shader](lab10.html) | [CS470_Lab10.zip](src/CS470_Lab10.zip)
 > Oct 23 | [Lab 10-2: CPU Frustum Culling](http://www.braynzarsoft.net/index.php?p=D3D11VFCulling) | N/A
 > Oct 28 | [Lab 11: Particle Systems](lab11.html) | [CS470_Lab11.zip](src/CS470_Lab11.zip)
+> Oct 30 | [Lab 11-2: Compute Shader](lab11-2.html) | N/A
