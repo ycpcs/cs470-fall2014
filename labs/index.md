@@ -29,3 +29,4 @@ Although the labs are not graded and you are not required to submit them, they a
 > Oct 30 | [Lab 11-2: Compute Shader](lab11-2.html) | N/A
 > Nov 4  | [Lab 12: Cube Mapping](lab12.html) | [CS470_Lab12.zip](src/CS470_Lab12.zip)
 > Nov 6  | [Lab 12-2: Normal and Displacement Mapping](lab12-2.html) | [CS470_Lab12-2.zip](src/CS470_Lab12-2.zip)
+> Nov 11 | [Lab 13: Terrain Rendering](lab13.html) | [CS470_Lab13.zip](src/CS470_Lab13.zip)
