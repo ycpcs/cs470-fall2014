@@ -31,3 +31,4 @@ Although the labs are not graded and you are not required to submit them, they a
 > Nov 6  | [Lab 12-2: Normal and Displacement Mapping](lab12-2.html) | [CS470_Lab12-2.zip](src/CS470_Lab12-2.zip)
 > Nov 11 | [Lab 13: Terrain Rendering](lab13.html) | [CS470_Lab13.zip](src/CS470_Lab13.zip)
 > Nov 13 | [Lab 13-2: Stenciling](lab13-2.html) | [CS470_Lab13-2.zip](src/CS470_Lab13-2.zip)
+> Nov 18 | [Lab 14: Shadow Mapping](lab14.html) | [CS470_Lab14.zip](src/CS470_Lab14.zip)
